@@ -1,0 +1,182 @@
+@import bourbon
+
+@font-face 
+  font-family: 'Amplify Personal Use Only'
+  src: local('Amplify Personal Use Only'), url('../fonts/Amplify_PersonalUseOnly.ttf')
+  font-weight: 400
+  font-style: normal
+
+html, body
+  margin: 0
+  padding: 0
+
+.bground
+  background: #353434
+
+.logo
+  font-family: 'Amplify Personal Use Only'
+  color: #fff
+  font-size: 4rem
+  line-height: 30px
+  height: 40px
+  display: none
+  border-right: 1px solid #404040
+  margin: 20px 0
+  padding-right: 20px
+
+.nav-btn
+  font-size: 0rem
+  color: #fff
+  position: absolute
+  top: 5px
+  cursor: pointer
+  .fa-bars
+    font-size: 3rem
+  &:hover
+    color: #d66324
+
+.nav
+  display: none
+  &__container
+    padding: 0
+    padding-top: 40px
+    margin: 0
+    list-style: none
+  &__item
+    background: #353434
+    font-size: 1.8rem
+  &__link
+    font-family: 'Lato'
+    font-weight: 400
+    font-size: 1.6rem
+    color: #fff
+    display: block
+    line-height: 40px 
+    &:hover
+      text-decoration: none
+      color: #d66324
+  &_open
+    display: block
+
+.button
+  background: #d66324
+  font-family: 'Lato'
+  font-weight: 400
+  text-align: center
+  color: #fff
+  border: 0
+  padding: 0
+
+  &_size_b
+    width: 182px
+    line-height: 58px
+    font-size: 2.2rem
+
+.header
+  min-height: 40px
+  &__button
+    line-height: 30px
+    font-size: 1.5rem
+    position: absolute
+    width: 80px
+    top: 5px
+    right: 15px
+    border-radius: 2px
+
+.social-links
+  position: absolute
+  top: 5px
+  right: 100px
+  &__item
+    color: #fff
+    border: 2px solid #d66324
+    width: 30px
+    line-height: 26px
+    text-align: center
+    display: inline-block
+    margin-right: 5px
+    &:hover
+      color: #fff
+      background: #d66324
+
+.search-form
+  position: absolute
+  right: 210px
+  top: 5px
+  &__input
+    font-family: 'Lato'
+    font-size: 1.6rem
+    position: relative
+    border: none
+    padding: 0
+    height: 30px
+    vertical-align: top
+    width: 0
+    top: 0
+    left: 0
+  &__button
+    position: relative
+    height: 30px
+    border: none
+    padding: 0 10px
+    color: #fff
+    background: none
+    font-size: 2rem
+    vertical-align: top
+    &:hover
+      color: #d66324
+  &_visible
+    width: 290px
+    right: 15px
+  &_visible &__input
+    width: 100%
+  &_visible &__button
+    position: absolute
+    top: 0
+    right: 0
+    color: #353434
+
+
+@media (min-width: 992px)
+  .header
+    height: 80px
+    &__button
+      line-height: 35px
+      width: 100px
+      font-size: 1.6rem
+      top: 23px
+
+  .logo
+    display: inline-block
+    vertical-align: top
+  .nav-btn
+    display: none
+  .nav
+    display: inline-block
+    vertical-align: top
+    &__container
+      padding-top: 0
+    &__item
+      display: inline-block
+      line-height: 80px
+      padding-left: 40px
+    &__link
+      display: inline 
+      line-height: 80px
+
+  .social-links
+    top: 23px
+    right: 140px
+    &__item
+      width: 35px
+      line-height: 31px
+      margin-right: 10px
+
+  .search-form
+    top: 23px
+    right: 305px
+    &__input
+      height: 35px
+    &__button
+      height: 35px
+      font-size: 2.6rem

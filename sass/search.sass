@@ -1,0 +1,96 @@
+.search
+  margin-top: 40px // mobile 60px
+  margin-bottom: 40px
+  text-align: center
+  &__caption
+    font-family: 'Lato'
+    font-size: 2.2rem // mobile 3rem
+    font-weight: 700
+    text-align: center
+    margin-bottom: 35px
+    color: #4f4f4f
+  &__button
+    margin: 0 auto
+    line-height: 40px
+    width: 180px
+    font-size: 2.2rem
+
+.select
+  position: relative
+  font-family: 'Lato'
+  font-size: 2.2rem
+  color: #c1c1c1
+  width: 260px
+
+  margin: 0 auto 20px auto 
+
+  &__selected-option
+    width: 220px // 280px
+    line-height: 40px // mobile 60px
+    padding: 0 10px
+    background: #f6f6f6
+    text-align: right
+    display: inline-block
+    vertical-align: top
+  &__list
+    background: #f6f6f6
+    position: absolute
+    width: 220px
+    line-height: 40px
+    top: 40px
+    left: 0
+    height: 0
+    overflow: auto
+    transition: all .2s linear
+    z-index: 999
+    &_open
+      height: 160px
+  &__option
+    padding: 0 10px
+    cursor: pointer
+    &:hover
+      background: #d66324
+      color: #fff
+  &__button
+    background: #d66324
+    height: 40px
+    width: 40px
+    position: relative
+    display: inline-block
+    vertical-align: top
+    cursor: pointer
+    padding: 0
+    border: 0
+    &:focus:after
+      transform: translate(-50%,-50%) rotate(180deg)
+    &:after
+      font-family: 'fontawesome' 
+      display: block
+      position: absolute
+      content: '\f107'
+      top: 50%
+      left: 50%
+      color: #fff
+      transform: translate(-50%,-50%)
+      transition: all .2s linear
+
+@media (min-width: 1000px)
+  .search
+    margin-top: 60px
+    margin-bottom: 60px
+    &__caption
+      font-size: 3rem
+    &__button
+      line-height: 60px
+  .select
+    width: 340px  
+    &__selected-option
+      width: 280px
+      line-height: 60px
+    &__list
+      width: 280px
+      top: 60px
+      line-height: 60px
+    &__button
+      height: 60px
+      width: 60px

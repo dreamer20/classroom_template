@@ -1,0 +1,69 @@
+.pd-r-0
+  padding-right: 0
+
+.events__wrapper
+  background: #f6f6f6
+  padding: 20px 0
+.events
+  color: #464646
+  font-size: 1.6rem
+  font-family: 'Lato'
+  color: #464646
+  .events__title
+    font-size: 2.2rem
+    margin: 10px
+    text-align: center
+    color: #4f4f4f
+  .events__slider-controls
+    position: relative
+    .owl-controls
+      font-size: 2.6rem
+      text-align: center
+      color: #d66324
+      .owl-prev, .owl-next
+        display: inline-block
+        margin: 0 10px
+        &:hover
+          color: #4f4f4f
+
+  .event__image
+    max-width: 25%
+    height: auto
+    border-radius: 5px
+    float: left
+    margin-right: 10px
+  .event__text
+    margin: 0
+    margin-top: 16px
+  .event__info
+    tab-size: 1.4rem
+  .event__name
+    display: block
+    font-size: 18px
+  .event__date
+    display: block
+    font-style: italic
+    font-size: 1.2rem
+
+
+@media (min-width: 1000px)
+  .events__wrapper
+    padding-bottom: 60px
+  .events
+    font-size: 1.7rem
+    .events__title
+      margin-top: 40px
+      font-size: 3rem
+    .events__slider-controls
+      .owl-controls
+        top: 0
+        right: 0
+        +transform(translateY(-100%)) 
+        font-size: 4.6rem
+        position: absolute
+    .event__name
+      font-size: 1.7rem
+      display: inline
+    .event__date
+      display: inline
+      padding-left: 30px 
